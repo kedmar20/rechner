@@ -1,107 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Rechner</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <h1 class="header__heading">Budget App</h1>
-      </header>
-      <main class="budget">
-        <section class="budget__form">
-          <p class="error hide" data-error>
-            Description can't be empty, value must be a positive number
-          </p>
-          <ul class="inputs">
-            <li class="switch">
-              <input
-                type="checkbox"
-                name="switch"
-                id="switch"
-                class="switch__input"
-                checked
-              />
-              <label for="switch" class="switch__label">switch label</label>
-            </li>
-            <li class="input">
-              <input
-                type="text"
-                name="description"
-                id="description"
-                class="input__input"
-                placeholder="Description"
-              />
-              <label for="description" class="input__label">Description</label>
-            </li>
-            <li class="input">
-              <input
-                type="number"
-                name="value"
-                id="value"
-                class="input__input"
-                placeholder="Value"
-                min="0"
-              />
-              <label for="value" class="input__label">Value</label>
-            </li>
-            <li class="inputs__button">
-              <button class="button" data-enter-button>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  class="button__icon"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  />
-                </svg>
-              </button>
-            </li>
-          </ul>
-        </section>
-        <section class="budget__balance">
-          <h2 class="balance__heading" data-total-budget-info></h2>
-          <article class="balance__list" data-balance-list>
-            <section class="list">
-              <h3 class="list__heading list__heading--incomes">Incomes</h3>
-              <ul class="list__list" data-balance-list-incomes></ul>
-            </section>
-            <section class="list">
-              <h3 class="list__heading list__heading--expenses">Expenses</h3>
-              <ul class="list__list" data-balance-list-expenses></ul>
-            </section>
-          </article>
-        </section>
-      </main>
-    DFASDFASDFADSFF
-    dfadsfdfdf
-    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M22.65 34h3v-8.3H34v-3h-8.35V14h-3v8.7H14v3h8.65ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 23.95q0-4.1 1.575-7.75 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24.05 4q4.1 0 7.75 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm.05-3q7.05 0 12-4.975T41 23.95q0-7.05-4.95-12T24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24.05 41ZM24 24Z"/></svg>
-    <br>
+      <h1 class="header__heading">Budget App</h1>
+    </header>
+    <main class="budget">
+      <section class="budget__form">
+        <p class="error hide" data-error>
+          Description can't be empty, value must be a positive number
+        </p>
+        <ul class="inputs">
+          <li class="switch">
+            <input
+              type="checkbox"
+              name="switch"
+              id="switch"
+              class="switch__input"
+              checked
+            />
+            <label for="switch" class="switch__label">switch label</label>
+          </li>
+          <li class="input">
+            <input
+              type="text"
+              name="description"
+              id="description"
+              class="input__input"
+              placeholder="Description"
+            />
+            <label for="description" class="input__label">Description</label>
+          </li>
+          <li class="input">
+            <input
+              type="number"
+              name="value"
+              id="value"
+              class="input__input"
+              placeholder="Value"
+              min="0"
+            />
+            <label for="value" class="input__label">Value</label>
+          </li>
+          <li class="inputs__button">
+            <button class="button" data-enter-button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                class="button__icon"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="budget__balance">
+        <h2 class="balance__heading" data-total-budget-info></h2>
+        <article class="balance__list" data-balance-list>
+          <section class="list">
+            <h3 class="list__heading list__heading--incomes">Incomes</h3>
+            <ul class="list__list" data-balance-list-incomes></ul>
+          </section>
+          <section class="list">
+            <h3 class="list__heading list__heading--expenses">Expenses</h3>
+            <ul class="list__list" data-balance-list-expenses></ul>
+          </section>
+        </article>
+      </section>
+    </main>
+    DFASDFASDFADSFF dfadsfdfdf
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+      <path
+        d="M22.65 34h3v-8.3H34v-3h-8.35V14h-3v8.7H14v3h8.65ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 23.95q0-4.1 1.575-7.75 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24.05 4q4.1 0 7.75 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm.05-3q7.05 0 12-4.975T41 23.95q0-7.05-4.95-12T24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24.05 41ZM24 24Z"
+      />
+    </svg>
+    <br />
     fdasfmdasmfghdfghdf
     <button>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M21.05 33.1 35.2 18.95l-2.3-2.25-11.85 11.85-6-6-2.25 2.25ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 24q0-4.15 1.575-7.8 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24 4q4.15 0 7.8 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm0-3q7.1 0 12.05-4.975Q41 31.05 41 24q0-7.1-4.95-12.05Q31.1 7 24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24 41Zm0-17Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+        <path
+          d="M21.05 33.1 35.2 18.95l-2.3-2.25-11.85 11.85-6-6-2.25 2.25ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 24q0-4.15 1.575-7.8 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24 4q4.15 0 7.8 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm0-3q7.1 0 12.05-4.975Q41 31.05 41 24q0-7.1-4.95-12.05Q31.1 7 24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24 41Zm0-17Z"
+        />
+      </svg>
     </button>
-    <br>
+    <br />
     dsfffffffddfs
-    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M13.05 42q-1.25 0-2.125-.875T10.05 39V10.5H8v-3h9.4V6h13.2v1.5H40v3h-2.05V39q0 1.2-.9 2.1-.9.9-2.1.9Zm21.9-31.5h-21.9V39h21.9Zm-16.6 24.2h3V14.75h-3Zm8.3 0h3V14.75h-3Zm-13.6-24.2V39Z"/></svg>
-    <br>
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+      <path
+        d="M13.05 42q-1.25 0-2.125-.875T10.05 39V10.5H8v-3h9.4V6h13.2v1.5H40v3h-2.05V39q0 1.2-.9 2.1-.9.9-2.1.9Zm21.9-31.5h-21.9V39h21.9Zm-16.6 24.2h3V14.75h-3Zm8.3 0h3V14.75h-3Zm-13.6-24.2V39Z"
+      />
+    </svg>
+    <br />
     dsfffffffddfs
-    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M9 39h2.2l22.15-22.15-2.2-2.2L9 36.8Zm30.7-24.3-6.4-6.4 2.1-2.1q.85-.85 2.125-.825 1.275.025 2.125.875L41.8 8.4q.85.85.85 2.1t-.85 2.1ZM7.5 42q-.65 0-1.075-.425Q6 41.15 6 40.5v-4.3q0-.3.1-.55.1-.25.35-.5L31.2 10.4l6.4 6.4-24.75 24.75q-.25.25-.5.35-.25.1-.55.1Zm24.75-26.25-1.1-1.1 2.2 2.2Z"/></svg>
-
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+      <path
+        d="M9 39h2.2l22.15-22.15-2.2-2.2L9 36.8Zm30.7-24.3-6.4-6.4 2.1-2.1q.85-.85 2.125-.825 1.275.025 2.125.875L41.8 8.4q.85.85.85 2.1t-.85 2.1ZM7.5 42q-.65 0-1.075-.425Q6 41.15 6 40.5v-4.3q0-.3.1-.55.1-.25.35-.5L31.2 10.4l6.4 6.4-24.75 24.75q-.25.25-.5.35-.25.1-.55.1Zm24.75-26.25-1.1-1.1 2.2 2.2Z"
+      />
+    </svg>
 
     <script src="script.js"></script>
     <script>
-        const app = new BudgetApp ();        
-        app.initializeApp();  
-          
-    </script>   
-</body>
+      const app = new BudgetApp();
+      app.initializeApp();
+    </script>
+  </body>
 </html>
